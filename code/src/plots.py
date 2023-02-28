@@ -284,7 +284,8 @@ class PlotAnalysis():
             ax.annotate("b", ha="center", va="center", size=15,
                         xy=(1-0.955, 0.925), xycoords=ax,
                         bbox=None) 
-
+            
+        plt.xlim(0,xlim_end)
         plt.xlabel('Precipitation [mm/d]')
         plt.ylabel('Histogram')
         plt.grid()
@@ -345,7 +346,8 @@ class PlotAnalysis():
             ax.annotate("b", ha="center", va="center", size=15,
                         xy=(1-0.955, 0.925), xycoords=ax,
                         bbox=None) 
-
+        
+        plt.xlim(0,xlim_end)
         plt.xlabel('Temperature [K]')
         plt.ylabel('Histogram')
         plt.grid()
